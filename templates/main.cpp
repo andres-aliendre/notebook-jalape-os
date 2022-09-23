@@ -30,9 +30,9 @@ template<class T> using pqg = priority_queue<T>;
 // >>>>>>>>>> debugging >>>>>>>>>>
 #ifdef LOCAL
     #include DEBUG
-    #define LINE  cout << "-------------------" << endl;
+    #define LINE cerr << "-------------------" << endl;
 #else
-    #define dbg(x...)
+    #define deb(x...)
     #define LINE
 #endif
 // <<<<<<<<<< debugging <<<<<<<<<<

@@ -31,12 +31,12 @@ void __print(const T &xs)
 {cerr << "[ "; for (auto &x : xs) {__print(x);cerr << ' ';}cerr << ']';}
 
 void _print()
-{cerr << "]\n";}
+{cerr << "]" << endl;}
 
 template <typename T, typename... V>
 void _print(T t, V... v)
 {__print(t); if (sizeof...(v)) cerr << ", "; _print(v...);}
 
-#define dbg(x...) cerr << "[" << #x << "] = ["; _print(x)
+#define deb(x...) cerr << "[" << #x << "] = ["; _print(x)
 
 #endif /* DEBUG_H */
