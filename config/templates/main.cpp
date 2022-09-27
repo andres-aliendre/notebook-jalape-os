@@ -59,8 +59,8 @@ const int DX[4]{1,0,-1,0}, DY[4]{0,1,0,-1};
 
 void test_case();
 
-int main() {
-    _("main");
+int main(int argc, char const *argv[]) {
+    _(argv[0]);
     int T;
     cin >> T;
     rep (t, 0, T) { test_case(); }
