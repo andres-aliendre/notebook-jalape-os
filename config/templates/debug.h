@@ -22,6 +22,10 @@ template<typename T>
 void __print(priority_queue<T> xs)
 {cerr << "[ "; while (xs.size()) {__print(xs.top()); xs.pop(); cerr << ' '; }cerr << ']';}
 
+template<typename T>
+void __print(stack<T> xs)
+{cerr << "[ "; while (xs.size()) {__print(xs.top()); xs.pop(); cerr << ' '; }cerr << ']';}
+
 template<typename T, typename V>
 void __print(const pair<T, V> &x)
 {__print(x.first); cerr << ':'; __print(x.second);}
