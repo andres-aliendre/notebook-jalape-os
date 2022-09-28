@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.in": "plaintext",
+        "*.out": "plaintext",
+        "*.err": "plaintext"
+    }
+}
