@@ -61,7 +61,7 @@ void test_case();
 
 int main(int argc, char const *argv[]) {
     _(argv[0]);
-    int T;
+    int T = 1;
     cin >> T;
     rep (t, 0, T) { test_case(); }
 
